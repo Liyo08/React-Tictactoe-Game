@@ -12,6 +12,12 @@
     font-weight: bold;
 }
 
+.title img{
+    padding:20px 20px;
+    height:50px;
+    padding-top:10px;
+}
+
 .title span {
     color: #26ffbc;
     padding-left: 15px;

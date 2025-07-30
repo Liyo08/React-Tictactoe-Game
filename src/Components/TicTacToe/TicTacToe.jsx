@@ -69,6 +69,7 @@ const checkWin = () => {
       titleRef.current.innerHTML = "It's a draw!";
     }
   }
+
   return (
 
     <div className="container">
