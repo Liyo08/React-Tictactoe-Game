@@ -69,6 +69,12 @@ const checkWin = () => {
       titleRef.current.innerHTML = "It's a draw!";
     }
   }
+  
+  const reset = () => {
+    setLock(false);
+    data = ["", "", "", "", "", "", "", "", ""];
+    titleRef.current.innerHTML = "Tic Tac Toe game in <span>React</span>";
+  }
 
   return (
 
@@ -92,7 +98,7 @@ const checkWin = () => {
           <div className="boxes" onClick= { (e) => {toggle(e,8)} }></div>
         </div>
       </div>
-      <button className="reset">Reset</button>
+      <button className="reset"onClick={() => {reset()}}>Reset</button>
     </div>
 
   )
